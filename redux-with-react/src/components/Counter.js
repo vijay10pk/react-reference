@@ -25,7 +25,7 @@ const Counter = () => {
 
 
   const increaseHandler = () => {
-    dispatch(counterActions.increase(5)); //here to pass payload we can pass it as argument to the action identifier function
+    dispatch(counterActions.increase(5)); //here to pass payload we can pass it as argument to the action identifier function - {type: SOME_UNIQUE_IDENTIFIER_CREATED_BY_REDUX, payload: 10}
     //we can pass any type of value but how extract does matters and it will have a default payload property i,e payload: {}
   };
 

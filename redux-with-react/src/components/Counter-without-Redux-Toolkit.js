@@ -23,7 +23,7 @@ const Counter = () => {
   //two actions to the store, one for increment and one for decrement.
 
   const increaseHandler = () => {
-    dispatch({ type: "increase", payload: 5 });
+    dispatch({ type: "increase", payload: 5 }); //payload name can be anything
   };
 
   const toggleCounterHandler = () => {

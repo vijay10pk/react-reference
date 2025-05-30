@@ -25,6 +25,7 @@ const counterSlice = createSlice({
 
 export const counterActions = counterSlice.actions; 
 //by exporting the actions here we can dispatch actions just by the name of the reducers inside the createSlice
-
+//we don't need to worry about action identifier, redux-toolkit will take care of creating action identifier for example it we can access
+//  toggleCounter like counterSlice.actions.toggleCounter
 export default counterSlice.reducer;
 

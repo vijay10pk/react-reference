@@ -1,0 +1,7 @@
+- We have a central store to store and manage all the state.
+- Component just subscribe to these store and they cannot directly manipulate the state.
+- We use reducer to mutate the state in the store.
+- Reducer functions are functions that takes in a input and gives a new output.
+- Actions - Component dispatch(trigger) action(operation) which the action will forward it to the reducer function and which in turn will update the data in store and the
+    subscribed components are then notified and updated with the new state data.
+

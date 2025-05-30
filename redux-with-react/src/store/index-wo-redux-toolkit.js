@@ -17,7 +17,7 @@ const counterReducer = (state = initialState ,action) => {
     if(action.type === 'increase')
     {
         return {
-            counter: state.counter+action.payload, 
+            counter: state.counter+action.payload, //payload name should be same as the one used at dispatch
             //Here we are passing payload which we want to add with previous state which will passed along with type in action
             //we can give any name for payload; here I have given payload name as payload
             showCounter: state.showCounter
