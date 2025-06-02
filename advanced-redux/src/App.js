@@ -64,6 +64,7 @@ function App() {
       isInitial = false;
       return;
     } // this is to avoid sending data to the cart in the database during initial render
+    
     if(cart.changed){ //by checking the changed state we can avoid this send data action from getting dispatched
     dispatch(sendCartData(cart));} //here we are not dispatching a action creator like how we did before by calling a reducer function
     //here we are calling a function that returns another function and redux not only accepts action object it also accepts function as action and execute the function

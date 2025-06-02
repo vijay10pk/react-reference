@@ -20,7 +20,7 @@ const cartSlice = createSlice({
       state.totalQuantity++;
       state.changed = true;
       if (!existingItem) {
-        state.items.push({
+        state.items.push({ //we should not use push if we are not using redux toolkit because it will mutate the state directly
           id: newItem.id,
           price: newItem.price,
           quantity: 1,

@@ -7,7 +7,7 @@ const uiSlice = createSlice({
     initialState: initialUiState,
     reducers: {
         toggle(state) {
-            state.cartIsVisible = !state.cartIsVisible;
+            state.cartIsVisible = !state.cartIsVisible; //here it may look like we're mutating the state directly(which is not a good practice) behind the scene redux toolkit makes a copy and then update using immer package
         },
         showNotification(state,action) {
             state.notification = {

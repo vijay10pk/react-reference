@@ -28,4 +28,4 @@ export const counterActions = counterSlice.actions;
 //we don't need to worry about action identifier, redux-toolkit will take care of creating action identifier for example it we can access
 //  toggleCounter like counterSlice.actions.toggleCounter
 export default counterSlice.reducer;
-
+//reducer is exported and used in the index.js file of the store
