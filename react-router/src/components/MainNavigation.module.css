@@ -17,7 +17,7 @@
   }
   
   .list a:hover,
-  .list a.active {
+  .list a.active { /*Here we're using a instead of Link because the Link component renders a regular anchor tag*/
     color: var(--color-primary-800);
     text-decoration: underline;
   }

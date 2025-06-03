@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Products from "./pages/Products";
 import RootLayout from "./pages/Root";
 import ErrorPage from "./pages/ErrorPage";
+import ProductDetailsPage from "./pages/ProductDetail";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +13,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <Home /> },
       { path: "/products", element: <Products /> },
+      { path: "/products/:productId", element: <ProductDetailsPage/>}
     ]
   }, //To make the routes wrap inside Main Navigation we created a parent component for route called root where we wrap the other routes as the children
   // there is a inbuilt component of react router dom which will tell where to load the child routes.
